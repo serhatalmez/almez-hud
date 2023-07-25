@@ -1,0 +1,267 @@
+body {
+    overflow: hidden;
+    background-size: cover;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    /* user-drag: none; */
+    -webkit-touch-callout: none;
+    /* background-image: url('https://cdn.discordapp.com/attachments/1019098415310848001/1037392154869383239/745e4f39-04ee-42d9-8609-f7d3cfbf4e9e.png');
+    background-size: 101%;  */
+}
+
+.player-wrapper {
+    position: absolute;
+    width: 30vw;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    height: 8vw;
+}
+
+.vehicle-wrapper {
+    display: none;
+    position: absolute;
+    width: 15vw;
+    left: 65%;
+    bottom: 3%;
+    height: 9vw;
+}
+
+.progress{
+    position: relative;
+    margin: 4px;
+    float:left;
+    text-align: center;
+}
+
+.barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 280px; height: 140px; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+}
+
+.bar{
+    position: absolute;
+    top: 0; left: 0;
+    width: 280px; height: 280px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 17px solid #eee;     /* half gray, */
+    border-bottom-color: #10D15A;  /* half azure */
+    border-right-color: #10D15A;
+    transition: transform 0.5s;
+}
+
+.texts {
+    margin-top: -20%;
+}
+
+.fuel-bar {
+    width: 30%;
+    margin: -3vw auto;
+    background-color: #fff;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+}
+
+.fuel-inside {
+    width: 50%;
+    height: 12px;
+    border-radius: 10px;
+    /* background-color: #10D15A; */
+}
+
+.progress span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: white;
+}
+
+.speed {
+    font-size: 34px;
+}
+
+.mph {
+    font-size: 15px;
+}
+
+.health {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    color: #ffff;
+    font-size: 0vw;
+}
+
+.armor {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.hunger {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.thirst {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.mic {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.inside {
+    position: absolute !important;
+    width: 4vw !important;
+    height:4vw !important;
+    left: -1.04vw !important;
+    top: -.35vw !important;
+}
+
+.health-inside {
+    left: -1.07vw !important;
+}
+
+.id {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.ammo {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+}
+
+.speedometer {
+    position: absolute;
+    left: -15vw;
+    width: 5vw;
+    height: 5vw;
+    display: none;
+}
+
+.pid {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    text-align: center;
+    width: 3.3vw;
+    height: 3.3vw;
+    font-size: 1vw;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gun-ammo {
+    position: absolute;
+    top: 0.35vw;
+    left: 0.35vw;
+    text-align: center;
+    width: 3.3vw;
+    height: 3.3vw;
+    font-size: 1vw;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.health-icon {
+    position: absolute;
+    left: 1.55vw;
+    top: 1.55vw;
+    width: 0.9vw;
+    height: 0.8vw;
+}
+
+.armor-icon {
+    position: absolute;
+    left: 1.65vw;
+    top: 1.45vw;
+    width: 0.7vw;
+    height: 1.0vw;
+}
+
+.water-icon {
+    position: absolute;
+    left: 1.65vw;
+    top: 1.45vw;
+    width: 0.7vw;
+    height: 1vw;
+}
+
+.mic-icon {
+    position: absolute;
+    left: 1.6vw;
+    top: 1.5vw;
+    width: 0.8vw;
+    height: 1vw;
+}
+
+.hunger-icon {
+    position: absolute;
+    left: 1.65vw;
+    top: 1.45vw;
+    width: 0.9vw;
+    height: 1vw;
+}
+
+.ldBar {
+    position: relative;
+    margin-left: 0vw;
+    font-size: 0vw;
+    left: 0vw;
+    margin-left: 0.7vw;
+    width: 5vw;
+    height: 5vw;
+    float: left;
+}
+
+.box {
+    position: relative;
+    top: 3vw;
+    right: 0;
+    width: auto;
+    min-width: 10vw;
+    height: 1.9vw;
+    background: rgba(128, 0, 255, 0.3);
+    border-radius: 20px 0px 0px 20px;
+    font-size: 0.8vw;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-text {
+    position: absolute;
+    top: -0.38vw;
+    left: 0vw;
+    text-align: center;
+    width: 10vw;
+    height: 1vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul {
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-top: 3%;
+}

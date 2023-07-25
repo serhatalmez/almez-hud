@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./dist/loading-bar.css" />
+    <script type="text/javascript" src="./dist/loading-bar.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dist/loading-bar.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <div class="box">
+                    <p class="box-text" id="cash"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <p class="box-text" id="bank"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <p class="box-text" id="black_money"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <p class="box-text" id="job"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box" id="job_money-box">
+                    <p class="box-text" id="job_money"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box" id="gang-box">
+                    <p class="box-text" id="gang"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap2">
+        <ul>
+            <li>
+                <div class="box" style="margin-top: 80vh;">
+                    <p class="box-text" id="playerId"></p>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <p class="box-text">discord.gg/trappin</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="vehicle-wrapper">
+        <div class="progress">
+            <div class="barOverflow">
+              <div class="bar"></div>
+            </div>
+            <!-- <div class="icons">
+                <div class="engine-icon">
+                    <i class="fa-solid fa-engine"></i>
+                </div>
+                <div class="lock-icon">
+
+                </div>
+                <div class="lights-icon">
+
+                </div>
+                <div class="belt-icon">
+
+                </div>
+                <div class="fuel-icon">
+
+                </div>
+            </div> -->
+            <div class="fuel-bar">
+                <div class="fuel-inside"></div>
+            </div>
+            <div class="texts">
+                <span class="speed">100</span><br>
+                <span class="mph">mph</span>
+            </div>
+        </div>
+    </div>
+    <div class="player-wrapper">
+        <div class="test"></div>
+        <div class="health" style="height: 3.3vw; width: 3.3vw;">
+            <div class="health-inside inside">
+                <img src="./images/health.png" class="health-icon">
+            </div>
+        </div>
+        <div class="armor" style="height: 3.3vw; width: 3.3vw;">
+            <div class="armor-inside inside">
+                <img src="./images/armor.png" class="armor-icon">
+            </div>
+        </div>
+        <div class="hunger" style="height: 3.3vw; width: 3.3vw;">
+            <div class="hunger-inside inside">
+                <img src="./images/hunger.png" class="hunger-icon">
+            </div>
+        </div>
+        <div class="thirst" style="height: 3.3vw; width: 3.3vw;">
+            <div class="thirst-inside inside">
+                <img src="./images/water.png" class="water-icon">
+            </div>
+        </div>
+        <div class="mic" style="height: 3.3vw; width: 3.3vw;">
+            <div class="mic-inside inside">
+                <img src="./images/mic.png" class="mic-icon">
+            </div>
+        </div>
+        <div class="ammo" style="height: 3.3vw; width: 3.3vw;">
+            <div class="ammo-inside inside">
+                <p class="gun-ammo">100</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+
+</html>
