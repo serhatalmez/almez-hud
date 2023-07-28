@@ -1,7 +1,5 @@
 ESX = exports['es_extended']:getSharedObject()
 
-local eventHandlerCounter = {}
-
 ESX.RegisterServerCallback('almez-hud:GetPlayerDetails', function(source, cb, eventHandler)
     local src = source 
     local player = ESX.GetPlayerFromId(src)
@@ -23,11 +21,5 @@ ESX.RegisterServerCallback('almez-hud:GetPlayerDetails', function(source, cb, ev
         })
     else
         cb(false)
-    end
-end)
-
-RegisterCommand('buildcounter', function(src)
-    if src == 0 then 
-       -- print(json.encode(eventHandlerCounter))
     end
 end)
