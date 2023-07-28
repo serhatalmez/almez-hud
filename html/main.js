@@ -160,39 +160,13 @@ window.addEventListener('message', (event) => {
             case 'bank':
                 $("#bank").text("🏛️ " + nf.format(item.money).replace(".00", ""));
                 break;
-            case 'society':
-                $("#job_money").text("💰 " + nf.format(item.money).replace(".00", ""));
-                break;
         } 
-    }
-
-    if (item.type === "updateAccountMoney") {
-        $("#job_money").text("💰 " + nf.format(item.money).replace(".00", ""));
     }
 
     if (item.type === "updateDetails") {
         $("#cash").text("💵 " + nf.format(item.cash).replace(".00", ""));
         $("#bank").text("🏛️ " + nf.format(item.bank).replace(".00", ""));
         $("#black_money").text("💸 " + nf.format(item.black_money).replace(".00", ""));
-        $("#job").text(item.job);
-        if ((item.job).length > 21) {
-            $("#job").css("font-size", "0.65vw")
-            $("#job").css("line-height", "220%")
-        }
-        if (item.job_money) {
-            $("#job_money").text("💰 " + nf.format(item.job_money).replace(".00", ""));
-        } else {
-            $("#job_money-box").remove()
-        }
-        if (!item.gang) {
-            $("#gang-box").remove()
-        } else {
-            $("#gang").text(item.gang);
-            if ((item.gang).length > 21) {
-                $("#gang").css("font-size", "0.65vw")
-                $("#gang").css("line-height", "220%")
-            }
-        }
     }
 })
 
